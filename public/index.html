@@ -4,15 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marble Royale</title>
-  <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+  <link rel="apple-touch-icon" href="/logo.jpg" />
   <meta name="theme-color" content="#0b1220" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <div class="banner" role="img" aria-label="Marble Royale banner">
+    <img src="/banner.jpg" alt="Marble Royale banner" onerror="this.parentElement.style.display='none'" />
+  </div>
   <div class="container">
     <div class="brand">
-      <img src="/logo.png" alt="Marble Royale" class="logo" />
+      <img src="/logo.jpg" alt="Marble Royale" class="logo" />
       <h1>Marble Royale</h1>
     </div>
 
@@ -53,7 +56,7 @@
   body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; background:#0b1220; color:#e2e8f0 }
   .container { max-width: 900px; margin: 0 auto; padding: 24px }
   .brand { display:flex; align-items:center; gap:12px; margin: 0 0 16px 0 }
-  .brand .logo { width:56px; height:56px; border-radius:12px; box-shadow: 0 0 30px rgba(251,191,36,.25) }
+  .brand .logo { width:56px; height:56px; border-radius:12px; box-shadow: 0 0 30px rgba(34,197,94,.25) }
   .brand h1 { margin:0 }
   section { margin: 16px 0 }
   #joinForm { display:flex; gap:8px }
@@ -66,7 +69,7 @@
   .bar { flex:1; background:#0e1729; border-radius:999px; position:relative; height:18px }
   .marble { position:absolute; top:2px; left:2px; width:14px; height:14px; border-radius:50%; background:#2563eb; box-shadow:0 0 0 2px #1d4ed8 inset }
   .finish { margin-top:8px }
-  .timer { font-size: 32px; font-weight:700; color:#fde68a }
+  .timer { font-size: 32px; font-weight:700; color:#22c55e }
   .msg { min-height: 20px }
 </style>
 </html>
