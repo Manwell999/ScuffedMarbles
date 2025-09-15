@@ -27,9 +27,21 @@ button:hover { filter: brightness(1.05) }
 
 /* Banner styles */
 .banner { width:100%; background:#000; display:flex; justify-content:center; }
-.banner img { width:100%; max-height:220px; object-fit:cover; display:block; }
+.banner img { width:100%; height:auto; object-fit:contain; display:block; }
 
 /* Brand area tweaks for new logo */
 .brand .logo { border-radius:12px; box-shadow: 0 0 30px rgba(34,197,94,.25) }
+
+/* Social link in header */
+.brand .social-link {
+  margin-left: auto;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid var(--panel-border);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+.brand .social-link:hover { filter: brightness(1.1) }
 
 
