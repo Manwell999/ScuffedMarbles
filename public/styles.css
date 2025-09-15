@@ -1,27 +1,28 @@
 /* Additional styles for nicer look */
 :root {
-  --bg: #0f172a;
-  --panel: #0b1220;
-  --panel-border: #16243b;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --accent: #22c55e;
+  --bg: #0b1220;
+  --panel: #0a0f1a;
+  --panel-border: #132033;
+  --text: #e6edf6;
+  --muted: #9fb1c9;
+  --accent: #f59e0b; /* gold */
+  --accent-2: #2563eb; /* royal blue */
 }
 
 html, body { height: 100% }
 body {
-  background: radial-gradient(1200px 800px at 20% -10%, #0b1329, #0f172a 60%);
+  background: radial-gradient(1200px 800px at 20% -10%, #0b1329, #0b1220 60%);
   color: var(--text);
 }
 .container { backdrop-filter: saturate(1.1); }
 h1 { letter-spacing: 0.5px }
-#joinForm input { background:#0a1222; color:var(--text); border:1px solid var(--panel-border) }
-button { background: linear-gradient(180deg, #22c55e, #16a34a); color: #04150b }
+#joinForm input { background:#0a1324; color:var(--text); border:1px solid var(--panel-border) }
+button { background: linear-gradient(180deg, var(--accent), #d97706); color: #2b1a00; font-weight:700 }
 button:hover { filter: brightness(1.05) }
 .panel { background:var(--panel); border-color:var(--panel-border) }
 .name { color: var(--muted) }
-.bar { background: #0e1a2c }
-.marble { background: #60a5fa; box-shadow: 0 1px 0 0 rgba(255,255,255,.2) inset, 0 0 0 2px #1d4ed8 inset }
-.timer { color: #93c5fd }
+.bar { background: #0e1729 }
+.marble { background: var(--accent-2); box-shadow: 0 1px 0 0 rgba(255,255,255,.2) inset, 0 0 0 2px #1d4ed8 inset }
+.timer { color: #fde68a }
 
 
