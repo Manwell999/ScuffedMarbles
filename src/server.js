@@ -58,14 +58,12 @@ app.use((req, res, next) => {
  */
 const sseClients = new Set(); // each item is res
 
-/** Utility: compute next 10-minute wall-clock boundary in ms */
+/** Utility: compute next 1-minute wall-clock boundary in ms */
 function computeNextRaceStartTimeMs() {
   const now = new Date();
-  const minutes = now.getUTCMinutes();
-  const nextBlock = Math.ceil((minutes + now.getUTCSeconds() / 60) / 10) * 10;
   const nextDate = new Date(now);
-  nextDate.setUTCMinutes(nextBlock, 0, 0);
-  // If rounding pushed us 60+, Date will roll hour/day correctly
+  // Always schedule to the next minute boundary
+  nextDate.setUTCMinutes(now.getUTCMinutes() + 1, 0, 0);
   return nextDate.getTime();
 }
 
