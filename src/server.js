@@ -268,7 +268,7 @@ setInterval(() => {
 }, 5000);
 
 app.listen(PORT, () => {
-  console.log(`Marbles game server running on http://localhost:${PORT}`);
+  console.log(`Marble Royale server running on http://localhost:${PORT}`);
 });
 
 

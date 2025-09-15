@@ -1,6 +1,6 @@
-Marble Racing Game
+Marble Royale
 
-A minimal Node.js + Express marble racing game. Users join the next race with a username. Races start every 1 minute (on the next minute UTC boundary). Live updates stream via Server-Sent Events.
+A minimal Node.js + Express marble royale game. Users join the next race with a username. Races start every 1 minute (on the next minute UTC boundary). Live updates stream via Server-Sent Events.
 
 Features
 - Join the next race with a unique username
